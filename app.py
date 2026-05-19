@@ -3,12 +3,12 @@ from flask import Flask, request, jsonify, render_template_string
 import joblib
 import numpy as np
 
-# Load trained model
+
 model = joblib.load('house_price_model.pkl')
 
 app = Flask(__name__)
 
-# Simple HTML UI
+
 HTML_PAGE = """
 <!DOCTYPE html>
 <html>
